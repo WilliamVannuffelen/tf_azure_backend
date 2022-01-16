@@ -45,14 +45,6 @@ az keyvault secret set --vault-name $az_vault_name \
     --name "sa-key" \
     --value "$az_sa_key"
 
-#az keyvault secret set --vault-name $az_vault_name \
-#    --name "sa-name" \
-#    --value "$az_sa_name"
-
-#az keyvault secret set --vault-name $az_vault_name \
-#    --name "sc-name" \
-#    --value "$az_sc_name"
-
 az keyvault secret set --vault-name "$az_vault_name" \
     --name "sp-id" \
     --value "$az_sp_id"
