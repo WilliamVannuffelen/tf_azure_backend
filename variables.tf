@@ -1,17 +1,21 @@
-variable "client_id" {
-    type = string
-    sensitive = true
-}
-
-variable "client_secret" {
-    type = string
-    sensitive = true
-}
-
-variable "tenant_id" {
+variable "az_subscription" {
     type = string
 }
-
-variable "subscription_id" {
+variable "az_location" {
+    type = string
+}
+variable "az_rg_name" {
+    type = string
+}
+variable "az_vault_name" {
+    type = string
+}
+variable "az_sa_name" {
+    type = string
+}
+variable "az_sc_name" {
+    type = string
+}
+variable "az_sp_name" {
     type = string
 }
