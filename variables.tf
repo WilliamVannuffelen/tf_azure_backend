@@ -1,17 +1,16 @@
-variable "client_id" {
-    type = string
-    sensitive = true
+variable "namespace" {
+    description = "Namespace used for resource naming and tagging"
+    type        = string
 }
-
-variable "client_secret" {
-    type = string
-    sensitive = true
+variable "az_subscription" {
+    description = "GUID of Azure subscription."
+    type        = string
 }
-
-variable "tenant_id" {
-    type = string
+variable "az_tenant" {
+    description = "GUID of Azure tenant."
+    type        = string
 }
-
-variable "subscription_id" {
-    type = string
+variable "az_location" {
+    description = "Azure region the resources should reside in."
+    type        = string
 }

@@ -1,15 +1,18 @@
 terraform {
-    required_version = ">= 1.1.2"
-    backend "azurerm" {
-        resource_group_name = "tfstate-01-rg"
-        storage_account_name = "wvdttfstate01sa"
-        container_name = "wvdttfstate01sc"
-        key = "terraform.tfstate"
-    }
+    required_version = ">= 1.1.5"
+
     required_providers {
         azurerm = {
             source = "hashicorp/azurerm"
-            version = ">= 2.92.0"
+            version = ">= 2.95.0"
+        }
+        azuread = {
+            source = "hashicorp/azuread"
+            version = ">= 2.17.0"
+        }
+        random = {
+            source = "hashicorp/random"
+            version = ">= 3.1.0"
         }
     }
 }
